@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Анкета</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="form_box" id="myForm">
+  
+    <label for="fullName"></label>
+    <input type="text" class="rfield" id="fullName" name="fullName" placeholder="ФИО" required />
+  
+    <label for="birthYear"></label>
+    <input type="text" class="rfield" id="birthYear" name="birthYear" placeholder="Год рождения" required />
+  
+    <label for="address"></label>
+    <input type="text" class="rfield" id="address" name="address" placeholder="Адрес" required />
+  
+    <label for="phoneNumber"></label>
+    <input type="tel" class="rfield" id="phoneNumber" name="phoneNumber" placeholder="Телефон" required />
+
+    <label for="maritalStatus"></label>    
+    <select id="maritalStatus" class="rfield" name="maritalStatus" required>
+      <option value="">Выберите семейное положение</option>
+      <option value="single">Холост/Не замужем</option>
+      <option option value="married">Женат/Замужем</option>
+      <option value="divorced">Разведен/Разведена</option>
+      <option option value="widowed">Вдовец/Вдова</option>
+    </select> 
+
+    <label for="email"></label>
+    <input type="email" class="rfield" id="email" name="email" placeholder="Электронная почта" required />
+  
+    <button type="submit" id="button" class="btn_submit disabled">Проверить</button>
+     
+    <div class="span"></div>
+    <div class="span2"></div>
+    
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
